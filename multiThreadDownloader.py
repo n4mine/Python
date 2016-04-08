@@ -19,9 +19,9 @@ def getAPart(pos):
 
     filename = "./part_"
     if os.path.exists(filename):
-        fd = open('./part_', 'r+')
+        fd = open(filename, 'r+')
     else:
-        fd = open('./part_', 'w+')
+        fd = open(filename, 'w+')
 
     fd.seek(startPos)
     fd.write(content)
